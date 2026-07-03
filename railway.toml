@@ -1,0 +1,5 @@
+[providers]
+providers = ["node", "java"]
+
+[deploy]
+startCommand = "bash start.sh"
