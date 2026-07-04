@@ -7,8 +7,6 @@ spring:
   data:
     mongodb:
       uri: ${MONGODB_URI:SPRING_DATA_MONGODB_URI}
-      username: ${MONGODB_USER:SPRING_DATA_MONGODB_USERNAME}
-      password: ${MONGODB_PASS:SPRING_DATA_MONGODB_PASSWORD}
 
 app:
   jwt:
