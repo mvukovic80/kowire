@@ -6,7 +6,7 @@ spring:
     name: mini-twitter-backend
   data:
     mongodb:
-      uri: ${MONGODB_URI:SPRING_DATA_MONGODB_URI}
+      uri: ${MONGODB_URI:SPRING_DATA_MONGODB_PUBLIC_URI}
 
 app:
   jwt:
