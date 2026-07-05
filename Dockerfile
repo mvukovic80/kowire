@@ -22,11 +22,11 @@ WORKDIR /app/backend
 COPY backend/pom.xml ./
 RUN mvn dependency:go-offline -q
 
-# Copy backend source
-COPY backend/src ./src
-
 # Copy compiled frontend assets into Spring Boot's static resources directory
 COPY --from=frontend-build /app/frontend/dist ./src/main/resources/static
+
+# Copy backend source
+COPY backend/src ./src
 
 # Build the fat JAR, skipping tests
 RUN mvn clean package -DskipTests -q
