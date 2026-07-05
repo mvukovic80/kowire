@@ -11,6 +11,9 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
+    mimeTypes: {
+      'text/css': ['css']
+    }
   },
   base: "./",
 });
