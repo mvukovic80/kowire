@@ -11,6 +11,8 @@ RUN npm ci
 COPY frontend/ ./
 RUN npm run build
 
+RUN apk add --no-cache mailcap
+
 # ── Stage 2: Build the Spring Boot backend ───────────────────────────────────
 FROM maven:3.9-eclipse-temurin-17 AS backend-build
 
