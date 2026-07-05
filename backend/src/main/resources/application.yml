@@ -11,7 +11,7 @@ spring:
 app:
   jwt:
     # In production, set JWT_SECRET as an environment variable (min 256-bit / 32+ char random string)
-    secret: ${JWT_SECRET:change-this-to-a-long-random-secret-key-of-at-least-32-characters}
+    secret: ${JWT_SECRET:SPRING_DATA_JWT_SECRET}
     expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 24 hours
 
   cors:
