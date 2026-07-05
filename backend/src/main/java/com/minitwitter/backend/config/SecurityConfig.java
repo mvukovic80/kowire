@@ -44,6 +44,7 @@ public class SecurityConfig {
                         .requestMatchers("/**").permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/health").permitAll()
+                        .antMatchers("/", "/index.html", "/assets/**", "/css/**", "/js/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(ex -> ex
