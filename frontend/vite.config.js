@@ -15,5 +15,5 @@ export default defineConfig({
       'text/css': ['css']
     }
   },
-  base: "./",
+  base: "/",
 });
